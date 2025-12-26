@@ -9,13 +9,12 @@
         "guzzlehttp/guzzle": "^7.2",
         "guzzlehttp/psr7": "^2.4",
         "illuminate/support": "^10.0",
-        "illuminate/database": "^10.0",
+        "illuminate/database": "^10.49",
         "illuminate/routing": "^10.0",
         "illuminate/http": "^10.0",
         "illuminate/console": "^10.0",
         "illuminate/events": "^10.0",
         "illuminate/filesystem": "^10.0",
-        "illuminate/foundation": "^10.0",
         "symfony/console": "^6.0",
         "symfony/http-foundation": "^6.0"
     },
@@ -28,4 +27,3 @@
     "minimum-stability": "dev",
     "prefer-stable": true
 }
-

@@ -3,7 +3,8 @@
 use App\Http\Controllers\ArticleController;
 use Illuminate\Support\Facades\Route;
 
-Route::prefix('articles')->group(function () {
+// API Routes
+Route::prefix('api/articles')->group(function () {
     Route::get('/', [ArticleController::class, 'index']);
     Route::get('/latest', [ArticleController::class, 'latest']);
     Route::get('/{id}', [ArticleController::class, 'show']);
