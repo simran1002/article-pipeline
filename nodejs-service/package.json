@@ -1,0 +1,21 @@
+{
+  "name": "beyondchat-nodejs-service",
+  "version": "1.0.0",
+  "description": "NodeJS service for article enhancement",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": ["article", "enhancement", "llm"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1",
+    "openai": "^4.20.0"
+  }
+}
+
+
