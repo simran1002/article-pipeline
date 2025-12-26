@@ -22,7 +22,6 @@ function ArticleList() {
       setError(null);
     } catch (err) {
       setError('Failed to load articles. Please make sure the backend is running.');
-      console.error('Error fetching articles:', err);
     } finally {
       setLoading(false);
     }
@@ -91,6 +90,17 @@ function ArticleList() {
                 </span>
                 {article.author && (
                   <span className="article-author">By {article.author}</span>
+                )}
+              </div>
+              <div className="article-card-features">
+                {article.original_url && (
+                  <span className="feature-tag">🌐 Original Source</span>
+                )}
+                {article.is_updated && (
+                  <span className="feature-tag">✨ Enhanced</span>
+                )}
+                {article.reference_articles && article.reference_articles.length > 0 && (
+                  <span className="feature-tag">📚 {article.reference_articles.length} References</span>
                 )}
               </div>
             </Link>

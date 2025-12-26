@@ -13,6 +13,7 @@ function ArticleDetail() {
 
   useEffect(() => {
     fetchArticle();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const fetchArticle = async () => {
@@ -23,7 +24,6 @@ function ArticleDetail() {
       setError(null);
     } catch (err) {
       setError('Failed to load article. Please make sure the backend is running.');
-      console.error('Error fetching article:', err);
     } finally {
       setLoading(false);
     }
